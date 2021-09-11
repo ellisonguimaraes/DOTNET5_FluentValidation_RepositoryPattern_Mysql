@@ -1,0 +1,12 @@
+USE fvalidationdb;
+
+CREATE TABLE `students` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`full_name` VARCHAR(100) NOT NULL DEFAULT '0',
+	`birth_date` DATETIME NULL DEFAULT NULL,
+	`document` VARCHAR(100) NOT NULL DEFAULT '0',
+	`phone_number` VARCHAR(100) NOT NULL DEFAULT '0',
+	`full_address` VARCHAR(130) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB DEFAULT CHARSET=LATIN1;
